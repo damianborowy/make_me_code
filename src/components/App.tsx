@@ -1,15 +1,17 @@
-import { h } from "preact";
-import { Route, Router } from "preact-router";
-import { CssBaseline } from "@mui/material";
-import Home from "../routes/home";
+import { h } from 'preact';
+import { Route, Router } from 'preact-router';
+import { CssBaseline } from '@mui/material';
+import Home from '../routes/home';
 
-export default function App() {
+const App: React.VFC = () => {
   return (
     <div id="preact_root">
       <CssBaseline />
       <Router>
-        <Route exact path="/" component={Home} />
+        <Route path="/" component={Home} />
       </Router>
     </div>
   );
-}
+};
+
+export default App;
